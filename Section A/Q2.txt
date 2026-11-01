@@ -1,0 +1,18 @@
+CrudRepository simplifies database operations.
+It provides built-in methods like save(), findAll(), findById() and deleteById().
+In JDBC, we usually write SQL queries manually.
+@Entity marks the Order class as a database entity.
+@Table specifies the database table name.
+@Id defines the primary key.
+@GeneratedValue automatically generates the primary key value.
+@Column maps a Java field to a database column.
+
+Example:
+@Entity
+@Table(name = "orders")
+public class Order {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+}

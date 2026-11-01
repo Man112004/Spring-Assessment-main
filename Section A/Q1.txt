@@ -1,0 +1,15 @@
+@RestController is used to create a REST API controller.
+@GetMapping("/menu") returns the list of available dishes.
+@GetMapping("/menu/{id}") returns details of a specific dish.
+@PathVariable extracts the dish ID from the URL.
+
+Difference:
+
+@Controller is mainly used to return web pages.
+@RestController returns data directly, usually in JSON format.
+
+Example:
+@GetMapping("/menu/{id}")
+public String getMenu(@PathVariable int id) {
+    return "Dish ID: " + id;
+}

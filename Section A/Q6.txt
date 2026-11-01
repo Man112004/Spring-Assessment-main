@@ -1,0 +1,15 @@
+A prompt template is a reusable message containing placeholders for user input.
+It helps generate consistent prompts for an AI chatbot.
+For example, a template can accept a user's food preference and generate a suitable meal suggestion.
+A plain string is a fixed message, while a prompt template can dynamically insert different values.
+Chaining multiple prompt steps allows the chatbot to use information from earlier steps.
+This helps create more context-aware conversations and better responses.
+
+Example:
+
+Hello! Suggest a meal for a user who prefers {{preference}} food.
+
+
+If the user enters vegetarian, the generated prompt becomes:
+
+Hello! Suggest a meal for a user who prefers vegetarian food.

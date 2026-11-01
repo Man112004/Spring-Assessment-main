@@ -1,0 +1,12 @@
+HttpClient sends HTTP requests to an external API.
+We use GET to retrieve delivery information.
+The API returns data in JSON format.
+Jackson's ObjectMapper converts JSON data into a Java object.
+A POJO is a simple Java class used to store data.
+The POJO field names should match the JSON keys.
+@JsonProperty maps a JSON key to a Java field when their names are different.
+
+Example:
+
+@JsonProperty("delivery_time")
+private String deliveryTime;

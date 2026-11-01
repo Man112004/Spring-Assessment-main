@@ -1,0 +1,1 @@
+Create a simple Java program that accepts a prompt from the user, sends it to the OpenAI Chat Completions API using Java HttpClient, parses the response using Jackson, and prints only the AI reply. Repeat until the user types "exit". Read the API key from an environment variable. Give simple code.

@@ -1,0 +1,10 @@
+Create a POST /recommend endpoint in Spring Boot.
+Accept the user's dietary preference, such as vegetarian or high protein.
+Use Java HttpClient to send a request to the OpenAI Chat Completions API.
+Use the HTTP method POST.
+Set the Content-Type header to application/json.
+Pass the API key using the Authorization: Bearer YOUR_API_KEY header.
+Parse the JSON response using Jackson's ObjectMapper.
+Return the AI-generated meal recommendation.
+
+Security: Store the API key in an environment variable instead of hardcoding it in the Java source file.

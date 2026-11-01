@@ -1,0 +1,4 @@
+I added a check for empty prompts so the user cannot send a blank message.
+I checked whether the API response contains choices before accessing the assistant's reply.
+I added exception handling to prevent the program from stopping when a request fails.
+These changes make the program safer and easier to use.
